@@ -1,0 +1,12 @@
+#!/bin/bash
+
+source settings.sh
+
+java \
+	-cp ${MYCLASSPATH}/stanford-parser.jar:${MYCLASSPATH}/stanford-parser-models.jar \
+	-Xmx16384m \
+	edu.stanford.nlp.parser.lexparser.LexicalizedParser \
+	-sentences newline \
+	-outputFormat oneline \
+	edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz \
+	/dev/stdin
