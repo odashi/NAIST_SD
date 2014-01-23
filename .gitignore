@@ -11,3 +11,7 @@
 *.lai
 *.la
 *.a
+
+# iOS Project
+grasphy/Build/
+grasphy/grasphy/Resources/epubview/books/
