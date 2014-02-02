@@ -28,15 +28,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    
+    // set uiwebview
     CGRect frame = [[UIScreen mainScreen] applicationFrame];
     CGRect rect = CGRectMake(0, 0, frame.size.width, frame.size.height + 20);
     UIWebView *wv = [[UIWebView alloc] initWithFrame:rect];
     wv.scalesPageToFit = NO;
     [self.view addSubview:wv];
     
+    // load epub
     NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"epubview"];
-    NSLog(@"%@", path);
     [wv loadRequest: [NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
     
 }
@@ -46,5 +46,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

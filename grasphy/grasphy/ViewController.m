@@ -19,9 +19,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
     EpubViewController *ev = [[EpubViewController alloc] init];
+    /*[ev setBook: books[indexPath.row]];
+    [self presentViewController:ev animated:YES completion:nil];*/
+    
     [self.view addSubview:ev.view];
+    
+    //NSArray *books = [Book getAllBooks];
+    
     
 }
 

@@ -10,6 +10,7 @@
 		6B04E245188FCADD00B2A257 /* EpubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B04E243188FCADD00B2A257 /* EpubViewController.m */; };
 		6B04E246188FCADD00B2A257 /* EpubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B04E244188FCADD00B2A257 /* EpubViewController.xib */; };
 		6BD732171890BC4C00F6287C /* epubview in Resources */ = {isa = PBXBuildFile; fileRef = 6BD732161890BC4C00F6287C /* epubview */; };
+		6BD7321A1890E2C900F6287C /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD732191890E2C900F6287C /* Book.m */; };
 		7B2245BB1886947200144631 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2245BA1886947200144631 /* Foundation.framework */; };
 		7B2245BD1886947200144631 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2245BC1886947200144631 /* CoreGraphics.framework */; };
 		7B2245BF1886947200144631 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2245BE1886947200144631 /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 		6B04E243188FCADD00B2A257 /* EpubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EpubViewController.m; path = Classes/EpubViewController/EpubViewController.m; sourceTree = "<group>"; };
 		6B04E244188FCADD00B2A257 /* EpubViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EpubViewController.xib; path = Classes/EpubViewController/EpubViewController.xib; sourceTree = "<group>"; };
 		6BD732161890BC4C00F6287C /* epubview */ = {isa = PBXFileReference; lastKnownFileType = folder; name = epubview; path = grasphy/Resources/epubview; sourceTree = "<group>"; };
+		6BD732181890E2C900F6287C /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		6BD732191890E2C900F6287C /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		7B2245B71886947200144631 /* grasphy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grasphy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B2245BA1886947200144631 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7B2245BC1886947200144631 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,6 +92,7 @@
 		6B04E240188FCA4800B2A257 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6BD7321B1890E2CE00F6287C /* Book */,
 				6B04E241188FCA7500B2A257 /* EpubViewController */,
 			);
 			name = Classes;
@@ -111,6 +115,15 @@
 			);
 			name = Resources;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		6BD7321B1890E2CE00F6287C /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				6BD732181890E2C900F6287C /* Book.h */,
+				6BD732191890E2C900F6287C /* Book.m */,
+			);
+			name = Book;
 			sourceTree = "<group>";
 		};
 		7B2245AE1886947200144631 = {
@@ -290,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BD7321A1890E2C900F6287C /* Book.m in Sources */,
 				7B2245D11886947200144631 /* ViewController.m in Sources */,
 				7B2245CB1886947200144631 /* AppDelegate.m in Sources */,
 				6B04E245188FCADD00B2A257 /* EpubViewController.m in Sources */,
