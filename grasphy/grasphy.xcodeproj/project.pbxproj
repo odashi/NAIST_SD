@@ -7,147 +7,160 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B2245BB1886947200144631 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2245BA1886947200144631 /* Foundation.framework */; };
-		7B2245BD1886947200144631 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2245BC1886947200144631 /* CoreGraphics.framework */; };
-		7B2245BF1886947200144631 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2245BE1886947200144631 /* UIKit.framework */; };
-		7B2245C51886947200144631 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B2245C31886947200144631 /* InfoPlist.strings */; };
-		7B2245C71886947200144631 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2245C61886947200144631 /* main.m */; };
-		7B2245CB1886947200144631 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2245CA1886947200144631 /* AppDelegate.m */; };
-		7B2245CE1886947200144631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2245CC1886947200144631 /* Main.storyboard */; };
-		7B2245D11886947200144631 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2245D01886947200144631 /* ViewController.m */; };
-		7B2245D31886947200144631 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2245D21886947200144631 /* Images.xcassets */; };
-		7B2245DA1886947200144631 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2245D91886947200144631 /* XCTest.framework */; };
-		7B2245DB1886947200144631 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2245BA1886947200144631 /* Foundation.framework */; };
-		7B2245DC1886947200144631 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2245BE1886947200144631 /* UIKit.framework */; };
-		7B2245E41886947200144631 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B2245E21886947200144631 /* InfoPlist.strings */; };
-		7B2245E61886947200144631 /* grasphyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2245E51886947200144631 /* grasphyTests.m */; };
+		43178441189E46C700FF893D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43178440189E46C700FF893D /* Foundation.framework */; };
+		43178443189E46C800FF893D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43178442189E46C800FF893D /* CoreGraphics.framework */; };
+		43178445189E46C800FF893D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43178444189E46C800FF893D /* UIKit.framework */; };
+		4317844B189E46C800FF893D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43178449189E46C800FF893D /* InfoPlist.strings */; };
+		4317844D189E46C800FF893D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317844C189E46C800FF893D /* main.m */; };
+		43178451189E46C800FF893D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43178450189E46C800FF893D /* AppDelegate.m */; };
+		43178454189E46C800FF893D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43178452189E46C800FF893D /* Main_iPhone.storyboard */; };
+		43178457189E46C800FF893D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43178455189E46C800FF893D /* Main_iPad.storyboard */; };
+		4317845A189E46C800FF893D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43178459189E46C800FF893D /* ViewController.m */; };
+		4317845C189E46C800FF893D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4317845B189E46C800FF893D /* Images.xcassets */; };
+		43178463189E46C800FF893D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43178462189E46C800FF893D /* XCTest.framework */; };
+		43178464189E46C800FF893D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43178440189E46C700FF893D /* Foundation.framework */; };
+		43178465189E46C800FF893D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43178444189E46C800FF893D /* UIKit.framework */; };
+		4317846D189E46C800FF893D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4317846B189E46C800FF893D /* InfoPlist.strings */; };
+		4317846F189E46C800FF893D /* grasphyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317846E189E46C800FF893D /* grasphyTests.m */; };
+		437AE14418A23AD00042E0A5 /* WvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437AE14318A23AD00042E0A5 /* WvViewController.m */; };
+		437AE14A18A258160042E0A5 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437AE14918A258160042E0A5 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7B2245DD1886947200144631 /* PBXContainerItemProxy */ = {
+		43178466189E46C800FF893D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7B2245AF1886947200144631 /* Project object */;
+			containerPortal = 43178435189E46C700FF893D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7B2245B61886947200144631;
+			remoteGlobalIDString = 4317843C189E46C700FF893D;
 			remoteInfo = grasphy;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7B2245B71886947200144631 /* grasphy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grasphy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B2245BA1886947200144631 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7B2245BC1886947200144631 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7B2245BE1886947200144631 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		7B2245C21886947200144631 /* grasphy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "grasphy-Info.plist"; sourceTree = "<group>"; };
-		7B2245C41886947200144631 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7B2245C61886947200144631 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7B2245C81886947200144631 /* grasphy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "grasphy-Prefix.pch"; sourceTree = "<group>"; };
-		7B2245C91886947200144631 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7B2245CA1886947200144631 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7B2245CD1886947200144631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7B2245CF1886947200144631 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7B2245D01886947200144631 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7B2245D21886947200144631 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7B2245D81886947200144631 /* grasphyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grasphyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B2245D91886947200144631 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7B2245E11886947200144631 /* grasphyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "grasphyTests-Info.plist"; sourceTree = "<group>"; };
-		7B2245E31886947200144631 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7B2245E51886947200144631 /* grasphyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = grasphyTests.m; sourceTree = "<group>"; };
+		4317843D189E46C700FF893D /* grasphy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grasphy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43178440189E46C700FF893D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		43178442189E46C800FF893D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		43178444189E46C800FF893D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		43178448189E46C800FF893D /* grasphy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "grasphy-Info.plist"; sourceTree = "<group>"; };
+		4317844A189E46C800FF893D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4317844C189E46C800FF893D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4317844E189E46C800FF893D /* grasphy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "grasphy-Prefix.pch"; sourceTree = "<group>"; };
+		4317844F189E46C800FF893D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		43178450189E46C800FF893D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		43178453189E46C800FF893D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		43178456189E46C800FF893D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		43178458189E46C800FF893D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		43178459189E46C800FF893D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4317845B189E46C800FF893D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		43178461189E46C800FF893D /* grasphyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grasphyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43178462189E46C800FF893D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4317846A189E46C800FF893D /* grasphyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "grasphyTests-Info.plist"; sourceTree = "<group>"; };
+		4317846C189E46C800FF893D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4317846E189E46C800FF893D /* grasphyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = grasphyTests.m; sourceTree = "<group>"; };
+		437AE14218A23AD00042E0A5 /* WvViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WvViewController.h; sourceTree = "<group>"; };
+		437AE14318A23AD00042E0A5 /* WvViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WvViewController.m; sourceTree = "<group>"; };
+		437AE14818A258160042E0A5 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		437AE14918A258160042E0A5 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7B2245B41886947200144631 /* Frameworks */ = {
+		4317843A189E46C700FF893D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B2245BD1886947200144631 /* CoreGraphics.framework in Frameworks */,
-				7B2245BF1886947200144631 /* UIKit.framework in Frameworks */,
-				7B2245BB1886947200144631 /* Foundation.framework in Frameworks */,
+				43178443189E46C800FF893D /* CoreGraphics.framework in Frameworks */,
+				43178445189E46C800FF893D /* UIKit.framework in Frameworks */,
+				43178441189E46C700FF893D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B2245D51886947200144631 /* Frameworks */ = {
+		4317845E189E46C800FF893D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B2245DA1886947200144631 /* XCTest.framework in Frameworks */,
-				7B2245DC1886947200144631 /* UIKit.framework in Frameworks */,
-				7B2245DB1886947200144631 /* Foundation.framework in Frameworks */,
+				43178463189E46C800FF893D /* XCTest.framework in Frameworks */,
+				43178465189E46C800FF893D /* UIKit.framework in Frameworks */,
+				43178464189E46C800FF893D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7B2245AE1886947200144631 = {
+		43178434189E46C700FF893D = {
 			isa = PBXGroup;
 			children = (
-				7B2245C01886947200144631 /* grasphy */,
-				7B2245DF1886947200144631 /* grasphyTests */,
-				7B2245B91886947200144631 /* Frameworks */,
-				7B2245B81886947200144631 /* Products */,
+				43178446189E46C800FF893D /* grasphy */,
+				43178468189E46C800FF893D /* grasphyTests */,
+				4317843F189E46C700FF893D /* Frameworks */,
+				4317843E189E46C700FF893D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7B2245B81886947200144631 /* Products */ = {
+		4317843E189E46C700FF893D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B2245B71886947200144631 /* grasphy.app */,
-				7B2245D81886947200144631 /* grasphyTests.xctest */,
+				4317843D189E46C700FF893D /* grasphy.app */,
+				43178461189E46C800FF893D /* grasphyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7B2245B91886947200144631 /* Frameworks */ = {
+		4317843F189E46C700FF893D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7B2245BA1886947200144631 /* Foundation.framework */,
-				7B2245BC1886947200144631 /* CoreGraphics.framework */,
-				7B2245BE1886947200144631 /* UIKit.framework */,
-				7B2245D91886947200144631 /* XCTest.framework */,
+				43178440189E46C700FF893D /* Foundation.framework */,
+				43178442189E46C800FF893D /* CoreGraphics.framework */,
+				43178444189E46C800FF893D /* UIKit.framework */,
+				43178462189E46C800FF893D /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7B2245C01886947200144631 /* grasphy */ = {
+		43178446189E46C800FF893D /* grasphy */ = {
 			isa = PBXGroup;
 			children = (
-				7B2245C91886947200144631 /* AppDelegate.h */,
-				7B2245CA1886947200144631 /* AppDelegate.m */,
-				7B2245CC1886947200144631 /* Main.storyboard */,
-				7B2245CF1886947200144631 /* ViewController.h */,
-				7B2245D01886947200144631 /* ViewController.m */,
-				7B2245D21886947200144631 /* Images.xcassets */,
-				7B2245C11886947200144631 /* Supporting Files */,
+				4317844F189E46C800FF893D /* AppDelegate.h */,
+				43178450189E46C800FF893D /* AppDelegate.m */,
+				43178452189E46C800FF893D /* Main_iPhone.storyboard */,
+				43178455189E46C800FF893D /* Main_iPad.storyboard */,
+				43178458189E46C800FF893D /* ViewController.h */,
+				43178459189E46C800FF893D /* ViewController.m */,
+				437AE14818A258160042E0A5 /* TableViewController.h */,
+				437AE14918A258160042E0A5 /* TableViewController.m */,
+				437AE14218A23AD00042E0A5 /* WvViewController.h */,
+				437AE14318A23AD00042E0A5 /* WvViewController.m */,
+				4317845B189E46C800FF893D /* Images.xcassets */,
+				43178447189E46C800FF893D /* Supporting Files */,
 			);
 			path = grasphy;
 			sourceTree = "<group>";
 		};
-		7B2245C11886947200144631 /* Supporting Files */ = {
+		43178447189E46C800FF893D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B2245C21886947200144631 /* grasphy-Info.plist */,
-				7B2245C31886947200144631 /* InfoPlist.strings */,
-				7B2245C61886947200144631 /* main.m */,
-				7B2245C81886947200144631 /* grasphy-Prefix.pch */,
+				43178448189E46C800FF893D /* grasphy-Info.plist */,
+				43178449189E46C800FF893D /* InfoPlist.strings */,
+				4317844C189E46C800FF893D /* main.m */,
+				4317844E189E46C800FF893D /* grasphy-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7B2245DF1886947200144631 /* grasphyTests */ = {
+		43178468189E46C800FF893D /* grasphyTests */ = {
 			isa = PBXGroup;
 			children = (
-				7B2245E51886947200144631 /* grasphyTests.m */,
-				7B2245E01886947200144631 /* Supporting Files */,
+				4317846E189E46C800FF893D /* grasphyTests.m */,
+				43178469189E46C800FF893D /* Supporting Files */,
 			);
 			path = grasphyTests;
 			sourceTree = "<group>";
 		};
-		7B2245E01886947200144631 /* Supporting Files */ = {
+		43178469189E46C800FF893D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B2245E11886947200144631 /* grasphyTests-Info.plist */,
-				7B2245E21886947200144631 /* InfoPlist.strings */,
+				4317846A189E46C800FF893D /* grasphyTests-Info.plist */,
+				4317846B189E46C800FF893D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,13 +168,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B2245B61886947200144631 /* grasphy */ = {
+		4317843C189E46C700FF893D /* grasphy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B2245E91886947300144631 /* Build configuration list for PBXNativeTarget "grasphy" */;
+			buildConfigurationList = 43178472189E46C800FF893D /* Build configuration list for PBXNativeTarget "grasphy" */;
 			buildPhases = (
-				7B2245B31886947200144631 /* Sources */,
-				7B2245B41886947200144631 /* Frameworks */,
-				7B2245B51886947200144631 /* Resources */,
+				43178439189E46C700FF893D /* Sources */,
+				4317843A189E46C700FF893D /* Frameworks */,
+				4317843B189E46C700FF893D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -169,42 +182,42 @@
 			);
 			name = grasphy;
 			productName = grasphy;
-			productReference = 7B2245B71886947200144631 /* grasphy.app */;
+			productReference = 4317843D189E46C700FF893D /* grasphy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7B2245D71886947200144631 /* grasphyTests */ = {
+		43178460189E46C800FF893D /* grasphyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B2245EC1886947300144631 /* Build configuration list for PBXNativeTarget "grasphyTests" */;
+			buildConfigurationList = 43178475189E46C800FF893D /* Build configuration list for PBXNativeTarget "grasphyTests" */;
 			buildPhases = (
-				7B2245D41886947200144631 /* Sources */,
-				7B2245D51886947200144631 /* Frameworks */,
-				7B2245D61886947200144631 /* Resources */,
+				4317845D189E46C800FF893D /* Sources */,
+				4317845E189E46C800FF893D /* Frameworks */,
+				4317845F189E46C800FF893D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7B2245DE1886947200144631 /* PBXTargetDependency */,
+				43178467189E46C800FF893D /* PBXTargetDependency */,
 			);
 			name = grasphyTests;
 			productName = grasphyTests;
-			productReference = 7B2245D81886947200144631 /* grasphyTests.xctest */;
+			productReference = 43178461189E46C800FF893D /* grasphyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7B2245AF1886947200144631 /* Project object */ = {
+		43178435189E46C700FF893D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = NAIST_SD;
+				ORGANIZATIONNAME = yu.takagi;
 				TargetAttributes = {
-					7B2245D71886947200144631 = {
-						TestTargetID = 7B2245B61886947200144631;
+					43178460189E46C800FF893D = {
+						TestTargetID = 4317843C189E46C700FF893D;
 					};
 				};
 			};
-			buildConfigurationList = 7B2245B21886947200144631 /* Build configuration list for PBXProject "grasphy" */;
+			buildConfigurationList = 43178438189E46C700FF893D /* Build configuration list for PBXProject "grasphy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -212,88 +225,99 @@
 				en,
 				Base,
 			);
-			mainGroup = 7B2245AE1886947200144631;
-			productRefGroup = 7B2245B81886947200144631 /* Products */;
+			mainGroup = 43178434189E46C700FF893D;
+			productRefGroup = 4317843E189E46C700FF893D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B2245B61886947200144631 /* grasphy */,
-				7B2245D71886947200144631 /* grasphyTests */,
+				4317843C189E46C700FF893D /* grasphy */,
+				43178460189E46C800FF893D /* grasphyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7B2245B51886947200144631 /* Resources */ = {
+		4317843B189E46C700FF893D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B2245D31886947200144631 /* Images.xcassets in Resources */,
-				7B2245C51886947200144631 /* InfoPlist.strings in Resources */,
-				7B2245CE1886947200144631 /* Main.storyboard in Resources */,
+				43178457189E46C800FF893D /* Main_iPad.storyboard in Resources */,
+				4317845C189E46C800FF893D /* Images.xcassets in Resources */,
+				43178454189E46C800FF893D /* Main_iPhone.storyboard in Resources */,
+				4317844B189E46C800FF893D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B2245D61886947200144631 /* Resources */ = {
+		4317845F189E46C800FF893D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B2245E41886947200144631 /* InfoPlist.strings in Resources */,
+				4317846D189E46C800FF893D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7B2245B31886947200144631 /* Sources */ = {
+		43178439189E46C700FF893D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B2245D11886947200144631 /* ViewController.m in Sources */,
-				7B2245CB1886947200144631 /* AppDelegate.m in Sources */,
-				7B2245C71886947200144631 /* main.m in Sources */,
+				437AE14A18A258160042E0A5 /* TableViewController.m in Sources */,
+				4317845A189E46C800FF893D /* ViewController.m in Sources */,
+				437AE14418A23AD00042E0A5 /* WvViewController.m in Sources */,
+				43178451189E46C800FF893D /* AppDelegate.m in Sources */,
+				4317844D189E46C800FF893D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B2245D41886947200144631 /* Sources */ = {
+		4317845D189E46C800FF893D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B2245E61886947200144631 /* grasphyTests.m in Sources */,
+				4317846F189E46C800FF893D /* grasphyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7B2245DE1886947200144631 /* PBXTargetDependency */ = {
+		43178467189E46C800FF893D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7B2245B61886947200144631 /* grasphy */;
-			targetProxy = 7B2245DD1886947200144631 /* PBXContainerItemProxy */;
+			target = 4317843C189E46C700FF893D /* grasphy */;
+			targetProxy = 43178466189E46C800FF893D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7B2245C31886947200144631 /* InfoPlist.strings */ = {
+		43178449189E46C800FF893D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7B2245C41886947200144631 /* en */,
+				4317844A189E46C800FF893D /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		7B2245CC1886947200144631 /* Main.storyboard */ = {
+		43178452189E46C800FF893D /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7B2245CD1886947200144631 /* Base */,
+				43178453189E46C800FF893D /* Base */,
 			);
-			name = Main.storyboard;
+			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		7B2245E21886947200144631 /* InfoPlist.strings */ = {
+		43178455189E46C800FF893D /* Main_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7B2245E31886947200144631 /* en */,
+				43178456189E46C800FF893D /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		4317846B189E46C800FF893D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4317846C189E46C800FF893D /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -301,7 +325,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7B2245E71886947300144631 /* Debug */ = {
+		43178470189E46C800FF893D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -337,11 +361,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		7B2245E81886947300144631 /* Release */ = {
+		43178471189E46C800FF893D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -370,12 +394,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		7B2245EA1886947300144631 /* Debug */ = {
+		43178473189E46C800FF893D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -388,7 +412,7 @@
 			};
 			name = Debug;
 		};
-		7B2245EB1886947300144631 /* Release */ = {
+		43178474189E46C800FF893D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -401,7 +425,7 @@
 			};
 			name = Release;
 		};
-		7B2245ED1886947300144631 /* Debug */ = {
+		43178476189E46C800FF893D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -424,7 +448,7 @@
 			};
 			name = Debug;
 		};
-		7B2245EE1886947300144631 /* Release */ = {
+		43178477189E46C800FF893D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -446,32 +470,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B2245B21886947200144631 /* Build configuration list for PBXProject "grasphy" */ = {
+		43178438189E46C700FF893D /* Build configuration list for PBXProject "grasphy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B2245E71886947300144631 /* Debug */,
-				7B2245E81886947300144631 /* Release */,
+				43178470189E46C800FF893D /* Debug */,
+				43178471189E46C800FF893D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B2245E91886947300144631 /* Build configuration list for PBXNativeTarget "grasphy" */ = {
+		43178472189E46C800FF893D /* Build configuration list for PBXNativeTarget "grasphy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B2245EA1886947300144631 /* Debug */,
-				7B2245EB1886947300144631 /* Release */,
+				43178473189E46C800FF893D /* Debug */,
+				43178474189E46C800FF893D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		7B2245EC1886947300144631 /* Build configuration list for PBXNativeTarget "grasphyTests" */ = {
+		43178475189E46C800FF893D /* Build configuration list for PBXNativeTarget "grasphyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B2245ED1886947300144631 /* Debug */,
-				7B2245EE1886947300144631 /* Release */,
+				43178476189E46C800FF893D /* Debug */,
+				43178477189E46C800FF893D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7B2245AF1886947200144631 /* Project object */;
+	rootObject = 43178435189E46C700FF893D /* Project object */;
 }

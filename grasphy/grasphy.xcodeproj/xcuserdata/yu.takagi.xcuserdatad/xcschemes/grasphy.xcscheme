@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B2245B61886947200144631"
+               BlueprintIdentifier = "4317843C189E46C700FF893D"
                BuildableName = "grasphy.app"
                BlueprintName = "grasphy"
                ReferencedContainer = "container:grasphy.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B2245D71886947200144631"
+               BlueprintIdentifier = "43178460189E46C800FF893D"
                BuildableName = "grasphyTests.xctest"
                BlueprintName = "grasphyTests"
                ReferencedContainer = "container:grasphy.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B2245B61886947200144631"
+            BlueprintIdentifier = "4317843C189E46C700FF893D"
             BuildableName = "grasphy.app"
             BlueprintName = "grasphy"
             ReferencedContainer = "container:grasphy.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B2245B61886947200144631"
+            BlueprintIdentifier = "4317843C189E46C700FF893D"
             BuildableName = "grasphy.app"
             BlueprintName = "grasphy"
             ReferencedContainer = "container:grasphy.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B2245B61886947200144631"
+            BlueprintIdentifier = "4317843C189E46C700FF893D"
             BuildableName = "grasphy.app"
             BlueprintName = "grasphy"
             ReferencedContainer = "container:grasphy.xcodeproj">
