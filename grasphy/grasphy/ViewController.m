@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "EpubViewController.h"
+#import "Book.h"
 
 @interface ViewController ()
 
@@ -20,8 +21,15 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     EpubViewController *ev = [[EpubViewController alloc] init];
-    /*[ev setBook: books[indexPath.row]];
-    [self presentViewController:ev animated:YES completion:nil];*/
+    //*[ev setBook: books[indexPath.row]];
+    Book *abook = [[Book alloc] initWithId: @"44563"
+                                     title: @""
+                                    author: @""
+                                  pub_date: @""
+                                 cover_img: @""
+                                   indexes: [[NSArray alloc] init]];
+    [ev setBook: abook];
+    [self presentViewController:ev animated:YES completion:nil];
     
     [self.view addSubview:ev.view];
     

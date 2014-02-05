@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B04E245188FCADD00B2A257 /* EpubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B04E243188FCADD00B2A257 /* EpubViewController.m */; };
-		6B04E246188FCADD00B2A257 /* EpubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B04E244188FCADD00B2A257 /* EpubViewController.xib */; };
+		6B4B1ACD189ED51300C11595 /* EpubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4B1ACC189ED51300C11595 /* EpubViewController.m */; };
 		6BD732171890BC4C00F6287C /* epubview in Resources */ = {isa = PBXBuildFile; fileRef = 6BD732161890BC4C00F6287C /* epubview */; };
 		6BD7321A1890E2C900F6287C /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD732191890E2C900F6287C /* Book.m */; };
 		7B2245BB1886947200144631 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2245BA1886947200144631 /* Foundation.framework */; };
@@ -38,9 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6B04E242188FCADD00B2A257 /* EpubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EpubViewController.h; path = Classes/EpubViewController/EpubViewController.h; sourceTree = "<group>"; };
-		6B04E243188FCADD00B2A257 /* EpubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EpubViewController.m; path = Classes/EpubViewController/EpubViewController.m; sourceTree = "<group>"; };
-		6B04E244188FCADD00B2A257 /* EpubViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EpubViewController.xib; path = Classes/EpubViewController/EpubViewController.xib; sourceTree = "<group>"; };
+		6B4B1ACB189ED51300C11595 /* EpubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpubViewController.h; sourceTree = "<group>"; };
+		6B4B1ACC189ED51300C11595 /* EpubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpubViewController.m; sourceTree = "<group>"; };
 		6BD732161890BC4C00F6287C /* epubview */ = {isa = PBXFileReference; lastKnownFileType = folder; name = epubview; path = grasphy/Resources/epubview; sourceTree = "<group>"; };
 		6BD732181890E2C900F6287C /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		6BD732191890E2C900F6287C /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
@@ -101,9 +99,8 @@
 		6B04E241188FCA7500B2A257 /* EpubViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6B04E242188FCADD00B2A257 /* EpubViewController.h */,
-				6B04E243188FCADD00B2A257 /* EpubViewController.m */,
-				6B04E244188FCADD00B2A257 /* EpubViewController.xib */,
+				6B4B1ACB189ED51300C11595 /* EpubViewController.h */,
+				6B4B1ACC189ED51300C11595 /* EpubViewController.m */,
 			);
 			name = EpubViewController;
 			sourceTree = "<group>";
@@ -282,7 +279,6 @@
 			files = (
 				7B2245D31886947200144631 /* Images.xcassets in Resources */,
 				7B2245C51886947200144631 /* InfoPlist.strings in Resources */,
-				6B04E246188FCADD00B2A257 /* EpubViewController.xib in Resources */,
 				6BD732171890BC4C00F6287C /* epubview in Resources */,
 				7B2245CE1886947200144631 /* Main.storyboard in Resources */,
 			);
@@ -305,8 +301,8 @@
 			files = (
 				6BD7321A1890E2C900F6287C /* Book.m in Sources */,
 				7B2245D11886947200144631 /* ViewController.m in Sources */,
+				6B4B1ACD189ED51300C11595 /* EpubViewController.m in Sources */,
 				7B2245CB1886947200144631 /* AppDelegate.m in Sources */,
-				6B04E245188FCADD00B2A257 /* EpubViewController.m in Sources */,
 				7B2245C71886947200144631 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

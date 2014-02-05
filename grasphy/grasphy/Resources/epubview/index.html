@@ -15,14 +15,6 @@
         <!-- Render -->
         <script src="./js/epub.min.js"></script>
 
-
-        <script>
-            "use strict";
-            
-            var Book = ePub("./books/44563/");
-            
-        </script>
-
     </head>
     <body>
         <div id="main">
@@ -32,9 +24,11 @@
         </div>
         
         <script>
-    
+            
+            // ID is defined by EpubViewController
+            var Book = ePub("./books/" + ID + '/');
             Book.renderTo("area");
-    
+            
         </script>
     </body>
 </html>
