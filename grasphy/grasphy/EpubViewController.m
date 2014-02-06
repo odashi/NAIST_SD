@@ -55,7 +55,7 @@
     [webView loadRequest: [NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
     
     [self.view addSubview:webView];
-    [webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"var ID=%@", book.book_id]];
+    [webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"var ID=%@", book.src]];
 }
 
 @end
