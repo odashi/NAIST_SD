@@ -25,8 +25,6 @@
     [self initDB];
     NSArray *books = [Book getAllBooks];
     
-    NSLog(@"%d", [books count]);
-    
     // set and show epub view controler
     EpubViewController *ev = [[EpubViewController alloc] init];
     

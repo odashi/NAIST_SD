@@ -53,6 +53,7 @@
     // load epub
     NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"epubview"];
     [webView loadRequest: [NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
+    NSLog(@"%@", path);
     
     [self.view addSubview:webView];
     [webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"var ID=%@", book.src]];
