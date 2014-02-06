@@ -1,6 +1,6 @@
 # coding: utf-8
 
-# usage: pyhon calcdifficulty.py <path: directory of EPUB data>
+# usage: pyhon calcdifficulty.py <path: directory of EPUB data> <path: word count table>
 
 import math
 import os
@@ -11,7 +11,7 @@ def loadidf():
 	table = []
 	total = 0
 	wc = 0
-	with open('giga-word-count.txt', encoding='utf-8') as fp:
+	with open(sys.argv[2], encoding='utf-8') as fp:
 		for l in fp:
 			# ls = l.split('\n')[0].split('\t')
 			ls = l[:-1].split('\t')
