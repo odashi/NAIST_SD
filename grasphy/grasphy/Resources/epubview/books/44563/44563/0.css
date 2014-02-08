@@ -1,0 +1,307 @@
+@charset "utf-8";
+/**/
+body {
+    margin-left: 10%;
+    margin-right: 10%
+    }
+h1 {
+    text-align: center;
+    clear: both;
+    margin-top: 6em
+    }
+h2 {
+    text-align: center;
+    clear: both;
+    margin-top: 4em;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    line-height: 2em
+    }
+h3 {
+    text-align: center;
+    clear: both;
+    margin-top: 2em
+    }
+h4 {
+    text-align: center;
+    clear: both
+    }
+.chap1 {
+    margin-top: 1em
+    }
+p {
+    margin-top: 0.75em;
+    text-align: left;
+    margin-bottom: 0.75em
+    }
+.pagenum {
+    font-size: smaller;
+    text-align: right;
+    font-style: normal
+    }
+hr {
+    width: 33%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 33%;
+    margin-right: auto;
+    clear: both
+    }
+.sidenote {
+    text-indent: 0;
+    text-align: right;
+    min-width: 1.5em;
+    max-width: 1.5em;
+    margin-left: 1em;
+    clear: right;
+    font-size: smaller;
+    color: black
+    }
+hr.l15 {
+    width: 15%;
+    margin-left: 42%
+    }
+hr.l30 {
+    width: 30%;
+    margin-left: 35%
+    }
+.center {
+    text-align: center
+    }
+.left45 {
+    margin-left: 45%
+    }
+.left65 {
+    margin-left: 65%
+    }
+.smcap {
+    font-variant: small-caps
+    }
+.caption {
+    font-weight: bold;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 0.8em
+    }
+.figcenter {
+    margin: auto;
+    margin-top: 0.5em;
+    text-align: center;
+    clear: both
+    }
+.figright {
+    clear: right;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    margin-right: 0;
+    padding: 0;
+    text-align: center
+    }
+.figleft {
+    clear: left;
+    margin-left: 0;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    text-align: center
+    }
+div.figsub {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 1em;
+    margin-right: 1em
+    }
+.footnote {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 0.9em
+    }
+.footnotes {
+    margin-top: 6em
+    }
+.footnote .label {
+    text-align: right
+    }
+.fnanchor {
+    vertical-align: super;
+    font-size: 0.8em;
+    text-decoration: none
+    }
+.poetry-container {
+    text-align: center
+    }
+.poem {
+    display: inline-block;
+    font-size: 95%;
+    margin-bottom: 1em;
+    text-align: left
+    }
+img.drop-cap {
+    margin: 0 0.5em 0 0;
+    z-index: 1
+    }
+p.drop-cap {
+    text-indent: 0
+    }
+p.drop-cap:first-letter {
+    margin-left: -1.4em;
+    padding-right: 1em
+    }
+@media all {
+    /* was @media handheld */
+    .poem {
+        display: block;
+        margin-left: 5%;
+        margin-right: 10%
+        }
+    .sidenote {
+        float: left;
+        clear: none;
+        font-weight: bold
+        }
+    img.drop-cap {
+        display: none;
+        visibility: hidden
+        }
+    p.drop-cap:first-letter {
+        margin-left: 0;
+        padding-right: 0
+        }
+    }
+.poem .stanza {
+    margin: 1em 0 1em 0
+    }
+.poem p {
+    margin: 0;
+    padding-left: 3em;
+    text-indent: -3em
+    }
+.poem p.i1 {
+    margin-left: 1em
+    }
+.poem p.i2 {
+    margin-left: 2em
+    }
+.poem p.i3 {
+    margin-left: 3em
+    }
+.poem p.i4 {
+    margin-left: 4em
+    }
+.poem p.i5 {
+    margin-left: 5em
+    }
+.poem p.i6 {
+    margin-left: 6em
+    }
+.poem p.i7 {
+    margin-left: 7em
+    }
+.poem p.i8 {
+    margin-left: 8em
+    }
+.poem p.i10 {
+    margin-left: 10em
+    }
+.poem p.o1 {
+    margin-left: -0.4em
+    }
+.p2 {
+    margin-top: 2em
+    }
+.p6 {
+    margin-top: 6em
+    }
+.i1 {
+    margin-left: 1em
+    }
+.i2 {
+    margin-left: 2em
+    }
+.i3 {
+    margin-left: 3em
+    }
+.i4 {
+    margin-left: 4em
+    }
+.i10 {
+    margin-left: 10em
+    }
+.b20 {
+    font-size: 2em
+    }
+.b15 {
+    font-size: 1.5em
+    }
+.b12 {
+    font-size: 1.2em
+    }
+.s09 {
+    font-size: 0.9em
+    }
+.s08 {
+    font-size: 0.8em
+    }
+.blockquot {
+    margin-left: 5%;
+    margin-right: 10%;
+    font-size: 100%
+    }
+table {
+    margin-left: auto;
+    margin-right: auto;
+    empty-cells: show
+    }
+td {
+    padding-left: 1em;
+    padding-right: 1em
+    }
+.tdc {
+    text-align: center
+    }
+.tdr {
+    text-align: right
+    }
+.tdchap {
+    text-align: center;
+    padding-top: 0.75em
+    }
+.tdh {
+    text-indent: -1em;
+    margin-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1.25em
+    }
+.tdpg {
+    text-align: right;
+    vertical-align: bottom;
+    padding-bottom: 1.25em
+    }
+.tnbox {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8em;
+    margin-top: auto;
+    text-align: center;
+    border: 1px solid;
+    padding: 1em;
+    color: black;
+    background-color: #f6f2f2;
+    width: 25em
+    }
+.greek {
+    border-bottom: thin dotted #999
+    }
+.ch_summ {
+    font-size: 0.85em;
+    margin-left: 1em;
+    text-indent: -1em;
+    margin-top: 1.5em;
+    margin-bottom: 2.5em
+    }
+/**/
