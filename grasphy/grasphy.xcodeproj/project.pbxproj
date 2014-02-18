@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43095C8B18B2BD3D007270A3 /* testimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 43095C8A18B2BD3D007270A3 /* testimg.png */; };
+		4345055818AE6B540009EE4E /* pg44563.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4345055718AE6B540009EE4E /* pg44563.xml */; };
+		43E5B7D018A914CB00DC12B3 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E5B7CF18A914CB00DC12B3 /* TableViewController.m */; };
 		6B3930CE18A2CB5E006D6ECA /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B3930CD18A2CB5E006D6ECA /* libsqlite3.0.dylib */; };
 		6B3930D918A2CBC3006D6ECA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3930D018A2CBC3006D6ECA /* FMDatabase.m */; };
 		6B3930DA18A2CBC3006D6ECA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3930D218A2CBC3006D6ECA /* FMDatabaseAdditions.m */; };
@@ -43,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43095C8A18B2BD3D007270A3 /* testimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testimg.png; path = Resources/epubview/books/44563/testimg.png; sourceTree = "<group>"; };
+		4345055718AE6B540009EE4E /* pg44563.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = pg44563.xml; path = Resources/epubview/books/44563/pg44563.xml; sourceTree = "<group>"; };
+		43E5B7CE18A914CB00DC12B3 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		43E5B7CF18A914CB00DC12B3 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		6B3930CD18A2CB5E006D6ECA /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		6B3930CF18A2CBC3006D6ECA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		6B3930D018A2CBC3006D6ECA /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
@@ -198,6 +205,10 @@
 				7B2245CC1886947200144631 /* Main.storyboard */,
 				7B2245CF1886947200144631 /* ViewController.h */,
 				7B2245D01886947200144631 /* ViewController.m */,
+				4345055718AE6B540009EE4E /* pg44563.xml */,
+				43E5B7CE18A914CB00DC12B3 /* TableViewController.h */,
+				43E5B7CF18A914CB00DC12B3 /* TableViewController.m */,
+				43095C8A18B2BD3D007270A3 /* testimg.png */,
 				7B2245D21886947200144631 /* Images.xcassets */,
 				6B04E240188FCA4800B2A257 /* Classes */,
 				6BD732151890BC3100F6287C /* Resources */,
@@ -317,7 +328,9 @@
 				7B2245D31886947200144631 /* Images.xcassets in Resources */,
 				7B2245C51886947200144631 /* InfoPlist.strings in Resources */,
 				6BD732171890BC4C00F6287C /* epubview in Resources */,
+				4345055818AE6B540009EE4E /* pg44563.xml in Resources */,
 				7B2245CE1886947200144631 /* Main.storyboard in Resources */,
+				43095C8B18B2BD3D007270A3 /* testimg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E5B7D018A914CB00DC12B3 /* TableViewController.m in Sources */,
 				6BD7321A1890E2C900F6287C /* Book.m in Sources */,
 				7B2245D11886947200144631 /* ViewController.m in Sources */,
 				6B4B1ACD189ED51300C11595 /* EpubViewController.m in Sources */,
