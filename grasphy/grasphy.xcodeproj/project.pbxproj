@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43095C8B18B2BD3D007270A3 /* testimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 43095C8A18B2BD3D007270A3 /* testimg.png */; };
-		4345055818AE6B540009EE4E /* pg44563.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4345055718AE6B540009EE4E /* pg44563.xml */; };
+		43A00BA318B4AAB5009691B6 /* pg44563.xml in Resources */ = {isa = PBXBuildFile; fileRef = 43A00BA118B4AAB5009691B6 /* pg44563.xml */; };
+		43A00BA618B4CC0C009691B6 /* Grasphy_book_2bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A00BA518B4CC0C009691B6 /* Grasphy_book_2bk.png */; };
 		43E5B7D018A914CB00DC12B3 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E5B7CF18A914CB00DC12B3 /* TableViewController.m */; };
 		6B3930CE18A2CB5E006D6ECA /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B3930CD18A2CB5E006D6ECA /* libsqlite3.0.dylib */; };
 		6B3930D918A2CBC3006D6ECA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3930D018A2CBC3006D6ECA /* FMDatabase.m */; };
@@ -46,8 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		43095C8A18B2BD3D007270A3 /* testimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testimg.png; path = Resources/epubview/books/44563/testimg.png; sourceTree = "<group>"; };
-		4345055718AE6B540009EE4E /* pg44563.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = pg44563.xml; path = Resources/epubview/books/44563/pg44563.xml; sourceTree = "<group>"; };
+		43A00BA118B4AAB5009691B6 /* pg44563.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = pg44563.xml; path = Resources/epubview/books/44563/pg44563.xml; sourceTree = "<group>"; };
+		43A00BA518B4CC0C009691B6 /* Grasphy_book_2bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Grasphy_book_2bk.png; path = Resources/Grasphy_book_2bk.png; sourceTree = "<group>"; };
 		43E5B7CE18A914CB00DC12B3 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		43E5B7CF18A914CB00DC12B3 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		6B3930CD18A2CB5E006D6ECA /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
@@ -205,10 +205,10 @@
 				7B2245CC1886947200144631 /* Main.storyboard */,
 				7B2245CF1886947200144631 /* ViewController.h */,
 				7B2245D01886947200144631 /* ViewController.m */,
-				4345055718AE6B540009EE4E /* pg44563.xml */,
+				43A00BA518B4CC0C009691B6 /* Grasphy_book_2bk.png */,
+				43A00BA118B4AAB5009691B6 /* pg44563.xml */,
 				43E5B7CE18A914CB00DC12B3 /* TableViewController.h */,
 				43E5B7CF18A914CB00DC12B3 /* TableViewController.m */,
-				43095C8A18B2BD3D007270A3 /* testimg.png */,
 				7B2245D21886947200144631 /* Images.xcassets */,
 				6B04E240188FCA4800B2A257 /* Classes */,
 				6BD732151890BC3100F6287C /* Resources */,
@@ -328,9 +328,9 @@
 				7B2245D31886947200144631 /* Images.xcassets in Resources */,
 				7B2245C51886947200144631 /* InfoPlist.strings in Resources */,
 				6BD732171890BC4C00F6287C /* epubview in Resources */,
-				4345055818AE6B540009EE4E /* pg44563.xml in Resources */,
+				43A00BA618B4CC0C009691B6 /* Grasphy_book_2bk.png in Resources */,
+				43A00BA318B4AAB5009691B6 /* pg44563.xml in Resources */,
 				7B2245CE1886947200144631 /* Main.storyboard in Resources */,
-				43095C8B18B2BD3D007270A3 /* testimg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

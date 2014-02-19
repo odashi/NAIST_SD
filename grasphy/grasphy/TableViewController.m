@@ -45,7 +45,7 @@
     [self.view addSubview:seg_table];
     [toolbar addSubview:seg_table];
     [self.tableView setTableHeaderView:toolbar];
-    names=[NSArray arrayWithObjects:@"Adventures of Huckleberry Finn by Mark Twain",nil];
+//    names=[NSArray arrayWithObjects:@"Adventures of Huckleberry Finn by Mark Twain",nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -129,14 +129,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 1;
 }
@@ -149,11 +147,13 @@
     
     if(cell == nil){
         cell = [[UITableViewCell alloc]
-                initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+                initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         cell.textLabel.textColor = [UIColor blueColor];
         cell.accessoryType = UITableViewCellAccessoryNone;
         cell.selectionStyle = UITableViewCellSelectionStyleGray;
-        cell.textLabel.text = [names objectAtIndex:indexPath.row];
+        Book  *abook = [books objectAtIndex: indexPath.row];    
+        cell.textLabel.text = abook.title;
+        cell.detailTextLabel.text = abook.author;
     }
     
     return cell;

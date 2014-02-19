@@ -23,13 +23,23 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
+
     [myCollectionView setDataSource:self];
     [myCollectionView setDelegate:self];
     myCollectionView.backgroundColor = [UIColor whiteColor];
+    myCollectionView.frame = CGRectMake(0, 0, 1024, 1024);
     [self initDB];
     books = [Book getAllBooks];
+
+    NSString *path=[[[NSBundle mainBundle]resourcePath] stringByAppendingPathComponent:@"Documents"];
+    NSLog(@"path : %@",path);
+    NSFileManager *fileManager;
+    NSArray *array;
+    fileManager = [NSFileManager defaultManager];
+    array = [fileManager directoryContentsAtPath:path];
+    NSLog(@"path : %@",array);
 }
+
 
 
 - (void)viewDidAppear:(BOOL)animated
@@ -38,9 +48,9 @@
 
     books = [Book getAllBooks];
     
-    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 1024, 64)];
+    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 1024, 0)];
     [toolbar sizeToFit];
-    [self.view addSubview:toolbar];
+    [self.myCollectionView addSubview:toolbar];
 
     NSArray *arr = [NSArray arrayWithObjects:@"Shelf", @"List", nil];
     UISegmentedControl *seg =
@@ -74,7 +84,6 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];
     if (![fileManager fileExistsAtPath:[dir stringByAppendingPathComponent:@"file.db"]])
     {
-        NSLog(@"BEGIN : init DB");
         
         // create database
         FMDatabase *db= [FMDatabase databaseWithPath:[dir stringByAppendingPathComponent:@"file.db"]];
@@ -106,6 +115,7 @@
 //                                        "NULL, NULL);";
 
         dbook = [NSMutableDictionary dictionary];
+
         [self setXMLParser];
 
         sql= [NSString stringWithFormat:@"insert into books values (NULL,"
@@ -127,7 +137,6 @@
         dbook[@"numwords"],
         dbook[@"numpages"]];
 
-        NSLog(@"%@",sql);
         [db open];
         [db executeUpdate:sql];
         [db close];
@@ -156,13 +165,11 @@
     
     UICollectionViewCell *cell;
 
-    if(indexPath.section==0){//セクション0のセル
-        
         cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
         cell.backgroundColor = [UIColor whiteColor];
 
         NSBundle* bundle = [NSBundle bundleForClass:[self class]];
-        NSString *path = [bundle pathForResource:@"testimg" ofType:@"png"];
+        NSString *path = [bundle pathForResource:@"Grasphy_book_2bk" ofType:@"png"];
         UIImage *image = [UIImage imageWithContentsOfFile:path];
         UIImageView *iv = [[UIImageView alloc] init];
         iv.backgroundColor = [UIColor blueColor];
@@ -171,17 +178,45 @@
 
         [cell addSubview:iv];
 
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10,200,142,12)];
-//        NSString *str1 = [[NSString stringWithFormat:@"%d",[books objectAtIndex:indexPath.item].difficulty]];
-//        label.text = str1;
-        label.font = [UIFont fontWithName:@"AppleGothic" size:12];
-        label.textColor = [UIColor whiteColor];
-        [cell addSubview:label];
+        Book  *abook = [books objectAtIndex: indexPath.row];
+
+        UILabel *titlelabel = [[UILabel alloc] initWithFrame:CGRectMake(45,50,90,12)];
+//      titlelabel.lineBreakMode  = UILineBreakModeWordWrap;
+        titlelabel.text = abook.title;
+        titlelabel.font = [UIFont fontWithName:@"AppleGothic" size:9];
+        titlelabel.textColor = [UIColor whiteColor];
+        titlelabel.textAlignment = UITextAlignmentCenter;
+        titlelabel.numberOfLines  = 0;
+        [titlelabel sizeToFit];
+        [cell addSubview:titlelabel];
+
+        UILabel *authorlabel = [[UILabel alloc] initWithFrame:CGRectMake(45,85,100,12)];
+//        authorlabel.lineBreakMode  = UILineBreakModeWordWrap;
+        authorlabel.text = abook.author;
+        authorlabel.font = [UIFont fontWithName:@"AppleGothic" size:9];
+        authorlabel.textColor = [UIColor whiteColor];
+        authorlabel.textAlignment = UITextAlignmentCenter;
+        authorlabel.numberOfLines  = 0;
+        [authorlabel sizeToFit];
+        [cell addSubview:authorlabel];
         
-//        UIImageView *image = (UIImageView *)[cell viewWithTag:2];
-//        image.backgroundColor = [UIColor blueColor];
-        //        image.image = books[indexPath.load].cover_img);
-    }
+        UILabel *diflabel = [[UILabel alloc] initWithFrame:CGRectMake(10,140,142,12)];
+        NSString *dif;
+        if (abook.difficulty > 0 && abook.difficulty < 2){
+        diflabel.text = @"★☆☆☆☆";
+        } else if (abook.difficulty > 2 && abook.difficulty < 4){
+            diflabel.text = @"★★☆☆☆";
+        } else if (abook.difficulty > 4 && abook.difficulty < 6){
+            diflabel.text = @"★★★☆☆";
+        } else if (abook.difficulty > 6 && abook.difficulty < 8){
+            diflabel.text = @"★★★★☆";
+        } else if (abook.difficulty > 8 && abook.difficulty < 10){
+            diflabel.text = @"★★★★★";
+        }
+        diflabel.textAlignment = UITextAlignmentCenter;
+        diflabel.font = [UIFont fontWithName:@"AppleGothic" size:12];
+        diflabel.textColor = [UIColor whiteColor];
+        [cell addSubview:diflabel];
     
     return cell;
 }
