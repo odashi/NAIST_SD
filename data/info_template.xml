@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<book>
+	<title>title</title>
+	<author>author</author>
+	<cover_img>/path/to/epub_data//cover_image.jpg</cover_img>
+	<src>/path/to/epub_data</src>
+	<difficulty>###</difficulty>
+	<numwords>###</numwords>
+	<numpages>###</numpages>
+	<publication_timestamp>1970-01-01 00:00:00</publication_timestamp>
+	<create_timestamp>1970-01-01 00:00:00</create_timestamp>
+</book>
