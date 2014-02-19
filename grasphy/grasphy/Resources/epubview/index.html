@@ -23,17 +23,22 @@
         </div>
 
         <div id="dict-area">
-            <div id="dict-area-close">x</div>
+            <div id="dict-area-close">×</div>
             <div id="dict-area-body"></div>
         </div>
         <div id="overlay"></div>
+
+        <div id="toggle-syntax" data-flag="on">GRASP</div>
 
         <script src="./js/jquery.DOMWindow.js"></script>
         <script>
 
             // ID is defined by EpubViewController
             var Book = ePub("./books/" + ID + '/')
-            Book.renderTo("area")
+            Book.renderTo("area").then(function() {
+                $("#toggle-syntax").show();
+            });
+
 
             $('#prev').click(function() {
                 Book.prevPage().then(function() {
@@ -47,19 +52,38 @@
                 });
             });
 
+            $("#toggle-syntax").click(function() {
+                var flag = $(this).attr('data-flag');
+                var newFlag = (flag === 'on') ? 'off' : 'on';
+                var color = (newFlag === 'on') ? "#428bca" : "#ddd";
+                $(this)
+                .attr('data-flag', newFlag)
+                .css({'color': color});
+
+                var iRoot = $('body').find('iframe')[0].contentWindow.document.body;
+                if (newFlag === 'on') {
+                    showSyntax(iRoot)
+                } else {
+                    hideSyntax(iRoot);
+                }
+            });
+
             var pageBinds = function() {
                 var iRoot = $('body').find('iframe')[0].contentWindow.document.body;
 
                 $(iRoot).find('.word').click(function() {
                     var word = $(this).text().toLowerCase();
 
-                    var DICT_API = "http://127.0.0.1:5000/dictionary"
+                    var DICT_API = "http://grasphy.com/dictionary"
                     $.get(DICT_API, {words: word}, function(data){
                         showDictInfo(word, data);
                     });
                 });
 
-                showSyntax(iRoot);
+                if ($("#toggle-syntax").attr('data-flag') === "on") {
+                    showSyntax(iRoot);
+                }
+
             };
 
             var showDictInfo = function(word, data) {
@@ -78,7 +102,9 @@
                 result += "</ul>"
 
                 $('#dict-area-body').html(result);
-                $('#dict-area').show();
+                $('#dict-area').css({
+                    'top': $(window).scrollTop() + 100 + "px"
+                }).show();
                 $('#overlay').show();
             }
 
@@ -101,32 +127,47 @@
                     'font-weight': "bold"
                 });
 
-                $(iRoot).find('.S').children('.VP').children('.word').css({
+                $(iRoot).find('.S').children('.VP, .VPD, .VBN, .VBP, .VBZ, .MD').children('.word').css({
                     'color': "#b94a48",
+                    'font-weight': "bold"
+                });
+
+                $(iRoot).find('.S').children('.VP, .VPD, .VBN, .VBP, .VBZ, .MD').children('.NP').children('.word').css({
+                    'color': "#468847",
                     'font-weight': "bold"
                 });
 
 
                 $(iRoot).find('.PP').each(function() {
-                    /*$(this).prepend(' <span class="pphrase_s">(</span>');
-                    $(this).append(' <span class="pphrase_e">)</span>');
-
-                    children = $(this).children()
-                    $(children[0]).css({
-                        'color': "#c09853",
-                        'font-weight': "bold"
+                    $(this).css({
+                        'border': 'dashed 1px #c09853'
                     });
+                });
+            }
 
-                    $(children[children.length - 1]).css({
-                        'color': "#c09853",
-                        'font-weight': "bold"
-                    });*/
+            var hideSyntax = function(iRoot) {
+                $(iRoot).find('.S').children('.NP').children('.word').css({
+                    'color': "#000",
+                    'font-weight': "normal"
+                });
 
+                $(iRoot).find('.S').children('.VP, .VPD, .VBN, .VBP, .VBZ, .MD').children('.word').css({
+                    'color': "#000",
+                    'font-weight': "normal"
+                });
+
+                $(iRoot).find('.S').children('.VP, .VPD, .VBN, .VBP, .VBZ, .MD').children('.NP').children('.word').css({
+                    'color': "#000",
+                    'font-weight': "normal"
                 });
 
 
+                $(iRoot).find('.PP').each(function() {
+                    $(this).css({
+                        'border': 'none'
+                    });
+                });
             }
-
 
         </script>
     </body>

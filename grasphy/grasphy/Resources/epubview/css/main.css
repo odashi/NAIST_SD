@@ -74,7 +74,6 @@ body {
     padding: 0;
 }
 
-
 #dict-area #dict-area-body ul .pos {
     font-weight: bold;
     font-size: 12px;
@@ -98,4 +97,13 @@ body {
     font-style: bold;
     color: #000;
     text-align: center;
+}
+
+#toggle-syntax {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    top: 35px;
+    right: 20px;
+    color: #428bca;
 }
