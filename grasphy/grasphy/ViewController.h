@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, NSXMLParserDelegate>
+{
+    UITableViewController *tv;
+    NSArray *books;
+    NSString *nowTagStr;
+    NSMutableDictionary *dbook;
+}
+@property (strong, nonatomic) IBOutlet UICollectionView *myCollectionView;
 
 @end
