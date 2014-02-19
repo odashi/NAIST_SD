@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# $1: EPUB file path
+EPUB=${1}
+
+SCRIPTPATH=scripts
+TEMPPATH=makegrasphy_temp
+
+# extract EPUB
+unzip ${EPUB} -d ${TEMPPATH}
+
+# analyze
+for filename in `find ${TEMPPATH} -name *.html`; do
+	echo ""
+	echo "========"
+	echo ${filename}
+	echo "========"
+	echo ""
+
+	python3 ${SCRIPTPATH}/extract_sentence.py ${filename} > ${filename}.sent
+	${SCRIPTPATH}/sentence-boundary <${filename}.sent >${filename}.sent.split
+	python3 ${SCRIPTPATH}/add_sentence_tag.py ${filename} > ${filename}.with_no
+	${SCRIPTPATH}/stanford-parser-long < ${filename}.sent.split > ${filename}.parse
+	python3 ${SCRIPTPATH}/convert_sentence.py ${filename} ${filename}.with_no ${filename}.parse
+	
+	rm ${filename}.sent
+	rm ${filename}.sent.split
+	rm ${filename}.with_no
+	rm ${filename}.parse
+done
+
+# make EPUB for Grasphy
+cd ${TEMPPATH}
+zip -r ../${EPUB}.grasphy *
+cd ..
+
+# dispose temporary data
+rm -rf ${TEMPPATH}
+

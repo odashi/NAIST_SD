@@ -11,3 +11,7 @@
 *.lai
 *.la
 *.a
+
+# Temporary files for EPUB Analyzer
+epubanalyzer/epubanalyzer_temp
+epubanalyzer/data
