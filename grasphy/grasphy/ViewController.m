@@ -32,8 +32,23 @@
     [self presentViewController:ev animated:YES completion:nil];
     [self.view addSubview:ev.view];
     
-    
 }
+
+/*
+- (void)viewDidAppear:(BOOL)animated {
+    
+    //[UIReferenceLibraryViewController dictionaryHasDefinitionForTerm:@”apple”]
+    
+    //Boolean t = [UIReferenceLibraryViewController dictionaryHasDefinitionForTerm:@"apple"];
+    
+    // NSLog(@"%d", t);
+    
+    UIReferenceLibraryViewController *c = [[UIReferenceLibraryViewController alloc] initWithTerm:@"pink"];
+    [self presentViewController:c animated:NO completion:nil];
+    
+    [super viewDidAppear:animated];
+}
+*/
 
 - (void)didReceiveMemoryWarning
 {

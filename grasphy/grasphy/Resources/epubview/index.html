@@ -1,33 +1,132 @@
-<html lang="en">
+<html lang="en" >
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta charset="utf-8" >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
         <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, user-scalable=no">
-        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="description" content="" >
+        <meta name="viewport" content="width=device-width, user-scalable=no" >
+        <meta name="apple-mobile-web-app-capable" content="yes" >
 
-        <link rel="stylesheet" href="./css/normalize.css">
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/normalize.css" >
+        <link rel="stylesheet" href="./css/main.css" >
 
-        <script src="./js/libs/jquery-2.0.3.min.js"></script>
+        <script src="./js/libs/jquery-2.0.3.min.js"> </script>
 
-        <!-- Render -->
-        <script src="./js/epub.min.js"></script>
+        <script src="./js/epub.min.js" > </script>
 
     </head>
     <body>
         <div id="main">
-            <div id="prev" onclick="Book.prevPage();" class="arrow"></div>
-            <div id="area"></div>
-            <div id="next" onclick="Book.nextPage();"class="arrow"></div>
+            <div id="prev" class="arrow" > </div>
+            <div id="area" > </div>
+            <div id="next" class="arrow" > </div>
         </div>
 
+        <div id="dict-area">
+            <div id="dict-area-close">x</div>
+            <div id="dict-area-body"></div>
+        </div>
+        <div id="overlay"></div>
+
+        <script src="./js/jquery.DOMWindow.js"></script>
         <script>
 
             // ID is defined by EpubViewController
-            var Book = ePub("./books/" + ID + '/');
-            Book.renderTo("area");
+            var Book = ePub("./books/" + ID + '/')
+            Book.renderTo("area")
+
+            $('#prev').click(function() {
+                Book.prevPage().then(function() {
+                    pageBinds();
+                });
+            });
+
+            $('#next').click(function() {
+                Book.nextPage().then(function() {
+                    pageBinds();
+                });
+            });
+
+            var pageBinds = function() {
+                var iRoot = $('body').find('iframe')[0].contentWindow.document.body;
+
+                $(iRoot).find('.word').click(function() {
+                    var word = $(this).text().toLowerCase();
+
+                    var DICT_API = "http://127.0.0.1:5000/dictionary"
+                    $.get(DICT_API, {words: word}, function(data){
+                        showDictInfo(word, data);
+                    });
+                });
+
+                showSyntax(iRoot);
+            };
+
+            var showDictInfo = function(word, data) {
+                result = '<div class="dict-word">' + word + '</div>';
+
+                result += "<ul>"
+                for (var i=0, ldata=data[word].length; i<ldata; i++) {
+                    result += "<li>"
+                    result += '<div class="pos">' + data[word][i]['pos'] + "</div>";
+                    var ds = data[word][i]['def_sents'];
+                    for (var j=0, lds=ds.length; j<lds; j++) {
+                        result  += "<div>" +  ds[j]['ja_sent'] + "</div>";
+                    }
+                    result += "</li>"
+                }
+                result += "</ul>"
+
+                $('#dict-area-body').html(result);
+                $('#dict-area').show();
+                $('#overlay').show();
+            }
+
+            $('#dict-area-close').click(function() {
+                hideDictInfo();
+            });
+
+            $('#overlay').click(function() {
+                hideDictInfo();
+            });
+
+            var hideDictInfo = function() {
+                $('#dict-area').hide();
+                $('#overlay').hide();
+            }
+
+            var showSyntax = function(iRoot) {
+                $(iRoot).find('.S').children('.NP').children('.word').css({
+                    'color': "#428bca",
+                    'font-weight': "bold"
+                });
+
+                $(iRoot).find('.S').children('.VP').children('.word').css({
+                    'color': "#b94a48",
+                    'font-weight': "bold"
+                });
+
+
+                $(iRoot).find('.PP').each(function() {
+                    /*$(this).prepend(' <span class="pphrase_s">(</span>');
+                    $(this).append(' <span class="pphrase_e">)</span>');
+
+                    children = $(this).children()
+                    $(children[0]).css({
+                        'color': "#c09853",
+                        'font-weight': "bold"
+                    });
+
+                    $(children[children.length - 1]).css({
+                        'color': "#c09853",
+                        'font-weight': "bold"
+                    });*/
+
+                });
+
+
+            }
+
 
         </script>
     </body>
