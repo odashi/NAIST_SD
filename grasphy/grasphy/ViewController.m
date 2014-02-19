@@ -59,9 +59,16 @@
     seg.selectedSegmentIndex = 0;
     seg.momentary = YES;
     
+    [seg addTarget:self action:@selector(list:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:seg];
+    
+    tv = [[TableViewController alloc] init];
+    tv.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    tv.view.backgroundColor = [UIColor whiteColor];
+
+    
 
 }
-
 
 
 - (void)didReceiveMemoryWarning

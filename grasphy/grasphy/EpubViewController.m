@@ -28,7 +28,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,6 +41,10 @@
     [self makeUIWebView];
 }
 
+- (void)close:(UIButton*)button {
+    [self dismissViewControllerAnimated:YES completion: nil];
+}
+
 - (void)makeUIWebView {
     
     // set uiwebview
@@ -49,6 +52,14 @@
     CGRect rect = CGRectMake(0, 0, frame.size.width, frame.size.height + 20);
     webView = [[UIWebView alloc] initWithFrame:rect];
     webView.scalesPageToFit = YES;
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    btn.frame = CGRectMake(10, 32, 80, 30);
+    [btn setTitle:@"ライブラリ" forState:UIControlStateNormal];
+    [btn setTitle:@"ライブラリ" forState:UIControlStateHighlighted];
+    [btn setTitle:@"ライブラリ" forState:UIControlStateDisabled];
+    [btn addTarget:self action:@selector(close:) forControlEvents:UIControlEventTouchDown];
+    [webView addSubview:btn];
     
     // load epub
     NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"epubview"];
@@ -58,5 +69,6 @@
     [self.view addSubview:webView];
     [webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"var ID=%@", book.src]];
 }
+
 
 @end
