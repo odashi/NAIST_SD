@@ -41,7 +41,7 @@ def main():
 						for w in l.split():
 							score += idf[w]
 							wc += 1
-				print('score=%f, #word=%d (%s)' % (score/wc, wc, path+'/'+fname))
+				print('score=%f, #word=%d (%s)' % (100*score/wc, wc, path+'/'+fname))
 				total_score += score
 				total_wc += wc
 	print('total-score=%f, total-#word=%d' % (total_score/total_wc, total_wc))
