@@ -13,5 +13,5 @@
 *.a
 
 # Temporary files for EPUB Analyzer
-epubanalyzer/epubanalyzer_temp
+epubanalyzer/makegrasphy_temp
 epubanalyzer/data

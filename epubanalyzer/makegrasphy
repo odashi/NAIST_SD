@@ -3,25 +3,23 @@
 # $1: EPUB file path
 EPUB=${1}
 
-SCRIPTPATH=scripts
-TEMPPATH=makegrasphy_temp
+SCRIPTPATH=./scripts
+DATAPATH=../data
+TEMPPATH=./makegrasphy_temp
 
 # extract EPUB
-unzip ${EPUB} -d ${TEMPPATH}
+unzip ${EPUB} -d ${TEMPPATH} >/dev/null
 
 # analyze
 for filename in `find ${TEMPPATH} -name *.html`; do
-	echo ""
-	echo "========"
 	echo ${filename}
-	echo "========"
-	echo ""
 
-	python3 ${SCRIPTPATH}/extract_sentence.py ${filename} > ${filename}.sent
-	${SCRIPTPATH}/sentence-boundary <${filename}.sent >${filename}.sent.split
-	python3 ${SCRIPTPATH}/add_sentence_tag.py ${filename} > ${filename}.with_no
-	${SCRIPTPATH}/stanford-parser-long < ${filename}.sent.split > ${filename}.parse
-	python3 ${SCRIPTPATH}/convert_sentence.py ${filename} ${filename}.with_no ${filename}.parse
+	python3 ${SCRIPTPATH}/extract_sentence.py ${filename} > ${filename}.sent 2>/dev/null
+	${SCRIPTPATH}/sentence-boundary <${filename}.sent >${filename}.sent.split 2>/dev/null
+	python3 ${SCRIPTPATH}/add_sentence_tag.py ${filename} > ${filename}.with_no 2>/dev/null
+	${SCRIPTPATH}/stanford-tokenizer < ${filename}.sent.split > ${filename}.tok 2>/dev/null
+	${SCRIPTPATH}/stanford-parser-long < ${filename}.sent.split > ${filename}.parse 2>/dev/null
+	python3 ${SCRIPTPATH}/convert_sentence.py ${filename} ${filename}.with_no ${filename}.parse 2>/dev/null
 	
 	rm ${filename}.sent
 	rm ${filename}.sent.split
@@ -29,9 +27,13 @@ for filename in `find ${TEMPPATH} -name *.html`; do
 	rm ${filename}.parse
 done
 
+# calculate difficulty
+python3 ${SCRIPTPATH}/calc_difficulty.py ${TEMPPATH} ${DATAPATH}/wordcount.txt
+find ${TEMPPATH} -name *.tok | xargs rm
+
 # make EPUB for Grasphy
 cd ${TEMPPATH}
-zip -r ../${EPUB}.grasphy *
+zip -r ../${EPUB}.grasphy * >/dev/null
 cd ..
 
 # dispose temporary data
