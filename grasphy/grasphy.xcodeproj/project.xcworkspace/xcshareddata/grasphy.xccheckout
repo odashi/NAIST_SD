@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4498876E-681F-4D89-BCC1-133882656A7E</string>
+	<string>E1702137-DB3F-4EAD-B0DD-E78A843869F2</string>
 	<key>IDESourceControlProjectName</key>
 	<string>grasphy</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E3D94584-5813-40C5-9176-9D0E4EAA614C</key>
-		<string>https://github.com/odashi/NAIST_SD</string>
+		<key>2865CAA8-8978-409C-9699-661DF5BB9526</key>
+		<string>https://github.com/odashi/NAIST_SD.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>grasphy/grasphy.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E3D94584-5813-40C5-9176-9D0E4EAA614C</key>
+		<key>2865CAA8-8978-409C-9699-661DF5BB9526</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/odashi/NAIST_SD</string>
+	<string>https://github.com/odashi/NAIST_SD.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E3D94584-5813-40C5-9176-9D0E4EAA614C</string>
+	<string>2865CAA8-8978-409C-9699-661DF5BB9526</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E3D94584-5813-40C5-9176-9D0E4EAA614C</string>
+			<string>2865CAA8-8978-409C-9699-661DF5BB9526</string>
 			<key>IDESourceControlWCCName</key>
 			<string>NAIST_SD</string>
 		</dict>
