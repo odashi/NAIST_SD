@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		439FA0DF18B585F10022667F /* pg44953.xml in Resources */ = {isa = PBXBuildFile; fileRef = 439FA0DE18B585F10022667F /* pg44953.xml */; };
+		439FA0E118B58BCD0022667F /* pg44954.xml in Resources */ = {isa = PBXBuildFile; fileRef = 439FA0E018B58BCD0022667F /* pg44954.xml */; };
 		43A00BA318B4AAB5009691B6 /* pg44563.xml in Resources */ = {isa = PBXBuildFile; fileRef = 43A00BA118B4AAB5009691B6 /* pg44563.xml */; };
 		43A00BA618B4CC0C009691B6 /* Grasphy_book_2bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A00BA518B4CC0C009691B6 /* Grasphy_book_2bk.png */; };
 		43E5B7D018A914CB00DC12B3 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E5B7CF18A914CB00DC12B3 /* TableViewController.m */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		439FA0DE18B585F10022667F /* pg44953.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = pg44953.xml; path = Resources/epubview/books/44953/pg44953.xml; sourceTree = "<group>"; };
+		439FA0E018B58BCD0022667F /* pg44954.xml */ = {isa = PBXFileReference; lastKnownFileType = file; name = pg44954.xml; path = Resources/epubview/books/44954/pg44954.xml; sourceTree = "<group>"; };
 		43A00BA118B4AAB5009691B6 /* pg44563.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = pg44563.xml; path = Resources/epubview/books/44563/pg44563.xml; sourceTree = "<group>"; };
 		43A00BA518B4CC0C009691B6 /* Grasphy_book_2bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Grasphy_book_2bk.png; path = Resources/Grasphy_book_2bk.png; sourceTree = "<group>"; };
 		43E5B7CE18A914CB00DC12B3 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
@@ -206,7 +210,9 @@
 				7B2245CF1886947200144631 /* ViewController.h */,
 				7B2245D01886947200144631 /* ViewController.m */,
 				43A00BA518B4CC0C009691B6 /* Grasphy_book_2bk.png */,
+				439FA0E018B58BCD0022667F /* pg44954.xml */,
 				43A00BA118B4AAB5009691B6 /* pg44563.xml */,
+				439FA0DE18B585F10022667F /* pg44953.xml */,
 				43E5B7CE18A914CB00DC12B3 /* TableViewController.h */,
 				43E5B7CF18A914CB00DC12B3 /* TableViewController.m */,
 				7B2245D21886947200144631 /* Images.xcassets */,
@@ -328,6 +334,8 @@
 				7B2245D31886947200144631 /* Images.xcassets in Resources */,
 				7B2245C51886947200144631 /* InfoPlist.strings in Resources */,
 				6BD732171890BC4C00F6287C /* epubview in Resources */,
+				439FA0E118B58BCD0022667F /* pg44954.xml in Resources */,
+				439FA0DF18B585F10022667F /* pg44953.xml in Resources */,
 				43A00BA618B4CC0C009691B6 /* Grasphy_book_2bk.png in Resources */,
 				43A00BA318B4AAB5009691B6 /* pg44563.xml in Resources */,
 				7B2245CE1886947200144631 /* Main.storyboard in Resources */,

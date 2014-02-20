@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<package xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="id">
+  <metadata>
+    <dc:rights>Public domain in the USA.</dc:rights>
+    <dc:identifier id="id" opf:scheme="URI">http://www.gutenberg.org/ebooks/44953</dc:identifier>
+    <dc:creator opf:file-as="Various">Various</dc:creator>
+    <dc:contributor opf:file-as="Burnand, F. C. (Francis Cowley)" opf:role="edt">F. C. Burnand</dc:contributor>
+    <dc:title>Punch, or the London Charivari, Vol. 109, July 6, 1895</dc:title>
+    <dc:language xsi:type="dcterms:RFC4646">en</dc:language>
+    <dc:date opf:event="publication">2014-02-18</dc:date>
+    <dc:date opf:event="conversion">2014-02-19T06:28:00.916183+00:00</dc:date>
+    <dc:source>http://www.gutenberg.org/files/44953/44953-h/44953-h.htm</dc:source>
+    <meta content="coverpage" name="cover"/>
+  </metadata>
+  <manifest>
+    <!--Image: 400 x 600 size=126267 q=90-->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@cover.jpg" id="coverpage" media-type="image/jpeg"/>
+    <!--Image: 400 x 503 size=41660 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@i-400.png" id="item1" media-type="image/png"/>
+    <!--Image: 600 x 441 size=65543 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@iii-600.png" id="item2" media-type="image/png"/>
+    <!--Image: 600 x 500 size=25744 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@iv-600.png" id="item3" media-type="image/png"/>
+    <!--Image: 600 x 314 size=36302 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@001-600.png" id="item4" media-type="image/png"/>
+    <!--Image: 600 x 440 size=69694 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@002-600.png" id="item5" media-type="image/png"/>
+    <!--Image: 600 x 372 size=34155 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@003-600.png" id="item6" media-type="image/png"/>
+    <!--Image: 220 x 470 size=11629 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@004-220.png" id="item7" media-type="image/png"/>
+    <!--Image: 400 x 298 size=12718 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@005-400.png" id="item8" media-type="image/png"/>
+    <!--Image: 340 x 501 size=41043 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@006-340.png" id="item9" media-type="image/png"/>
+    <!--Image: 400 x 502 size=35976 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@007-400.png" id="item10" media-type="image/png"/>
+    <!--Image: 320 x 470 size=26923 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@009-320.png" id="item11" media-type="image/png"/>
+    <!--Image: 330 x 489 size=35136 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@010-330.png" id="item12" media-type="image/png"/>
+    <!--Image: 400 x 454 size=21405 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@011a-400.png" id="item13" media-type="image/png"/>
+    <!--Image: 300 x 325 size=15326 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@011b-300.png" id="item14" media-type="image/png"/>
+    <!--Image: 200 x 372 size=12791 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@012a-200.png" id="item15" media-type="image/png"/>
+    <!--Image: 340 x 476 size=36653 -->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@images@012b-340.png" id="item16" media-type="image/png"/>
+    <item href="pgepub.css" id="item17" media-type="text/css"/>
+    <item href="0.css" id="item18" media-type="text/css"/>
+    <item href="1.css" id="item19" media-type="text/css"/>
+    <!--Chunk: size=58239 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html" id="half-title" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=55615-->
+    <item href="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html" id="item20" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="wrap0000.html" id="coverpage-wrapper" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="coverpage-wrapper" linear="no"/>
+    <itemref idref="half-title" linear="yes"/>
+    <itemref idref="item20" linear="yes"/>
+  </spine>
+  <guide>
+    <reference href="wrap0000.html" type="cover" title="Cover"/>
+  </guide>
+</package>

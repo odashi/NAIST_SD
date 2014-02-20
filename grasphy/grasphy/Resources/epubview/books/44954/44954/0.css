@@ -1,0 +1,188 @@
+@charset "utf-8";
+/**/
+body {
+    margin-left: 10%;
+    margin-right: 10%
+    }
+h1, h2, h3 {
+    text-align: center;
+    clear: both
+    }
+.ph1, .ph2, .ph3, .ph4 {
+    text-align: center;
+    text-indent: 0;
+    font-weight: bold
+    }
+.ph1 {
+    font-size: xx-large;
+    margin: 0.67em auto
+    }
+.ph2 {
+    font-size: x-large;
+    margin: 0.75em auto
+    }
+.ph3 {
+    font-size: large;
+    margin: 0.83em auto
+    }
+.ph4 {
+    font-size: medium;
+    margin: 1.12em auto
+    }
+p {
+    margin-top: 0.75em;
+    text-align: justify;
+    margin-bottom: 0.75em
+    }
+div.titlepage {
+    text-align: center;
+    page-break-before: always;
+    page-break-after: always
+    }
+.xsmall {
+    font-size: x-small
+    }
+.small {
+    font-size: small
+    }
+.author {
+    text-align: right;
+    margin-right: 5%;
+    font-variant: small-caps
+    }
+.author2 {
+    text-align: right;
+    margin-right: 10%
+    }
+hr {
+    width: 33%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 33.5%;
+    margin-right: 33.5%;
+    clear: both
+    }
+hr.tb {
+    width: 45%;
+    margin-left: 27.5%;
+    margin-right: 27.5%
+    }
+hr.chap {
+    width: 65%;
+    margin-left: 17.5%;
+    margin-right: 17.5%
+    }
+hr.r5 {
+    width: 5%;
+    margin-left: 47.5%;
+    margin-right: 47.5%;
+    margin-top: 1em;
+    margin-bottom: 1em
+    }
+table {
+    margin-left: auto;
+    margin-right: auto
+    }
+.pagenum {
+    /* uncomment the next line for invisible page numbers */
+    /*  visibility: hidden;  */
+    font-size: smaller;
+    text-align: right
+    }
+.blockquot {
+    margin-left: 5%;
+    margin-right: 10%
+    }
+.center {
+    text-align: center
+    }
+.smcap {
+    font-variant: small-caps
+    }
+.dropcap {
+    clear: left;
+    vertical-align: bottom;
+    margin-left: 0;
+    padding-right: 0.2em
+    }
+.largecap {
+    display: none
+    }
+.caption {
+    font-weight: bold
+    }
+.figcenter {
+    margin: auto;
+    text-align: center
+    }
+.footnote {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 0.9em
+    }
+.footnote .label {
+    text-align: right
+    }
+.fnanchor {
+    vertical-align: super;
+    font-size: 0.8em;
+    text-decoration: none
+    }
+.poetry-container {
+    text-align: center
+    }
+.poem {
+    display: inline-block;
+    text-align: left
+    }
+.poem br {
+    display: none
+    }
+.poem .stanza {
+    margin: 1em 0 1em 0
+    }
+.poem span.i0 {
+    display: block;
+    margin-left: 0;
+    padding-left: 3em;
+    text-indent: -3em
+    }
+.poem span.i1 {
+    display: block;
+    margin-left: 0.75em;
+    padding-left: 3em;
+    text-indent: -3em
+    }
+.poem span.i2 {
+    display: block;
+    margin-left: 1em;
+    padding-left: 3em;
+    text-indent: -3em
+    }
+.transnote {
+    background-color: #E6E6FA;
+    color: black;
+    font-size: smaller;
+    padding: 0.5em;
+    margin-bottom: 5em;
+    font-family: sans-serif, serif
+    }
+@media all {
+    /* was @media handheld */
+    body {
+        margin-left: 2%;
+        margin-right: 2%
+        }
+    .largecap {
+        display: inline;
+        font-size: 2em
+        }
+    .dropcap {
+        display: none
+        }
+    .poem {
+        display: block;
+        margin-left: 1.5em
+        }
+    }
+/**/

@@ -28,16 +28,9 @@
     [myCollectionView setDelegate:self];
     myCollectionView.backgroundColor = [UIColor whiteColor];
     myCollectionView.frame = CGRectMake(0, 0, 1024, 1024);
+    booklist = [NSArray arrayWithObjects:@"pg44563", @"pg44953",@"pg44954", nil];
     [self initDB];
     books = [Book getAllBooks];
-
-    NSString *path=[[[NSBundle mainBundle]resourcePath] stringByAppendingPathComponent:@"Documents"];
-    NSLog(@"path : %@",path);
-    NSFileManager *fileManager;
-    NSArray *array;
-    fileManager = [NSFileManager defaultManager];
-    array = [fileManager directoryContentsAtPath:path];
-    NSLog(@"path : %@",array);
 }
 
 
@@ -65,9 +58,6 @@
     tv = [[TableViewController alloc] init];
     tv.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     tv.view.backgroundColor = [UIColor whiteColor];
-
-    
-
 }
 
 
@@ -105,42 +95,32 @@
         
 
         // insert test book
-//        sql=@"insert into books values (NULL,"
-//                                        "'Thackerayana Notes and Anecdotes', "
-//                                        "'Thackeray, William Makepeace, 1811-1863',"
-//                                        "'',"
-//                                        "'44563',"
-//                                        "9,"
-//                                        "10000,"
-//                                        "300,"
-//                                        "NULL, NULL);";
-
         dbook = [NSMutableDictionary dictionary];
+        for(int i = 0; i < [booklist count]; i++){
+            [self setXMLParser:[booklist objectAtIndex:i]];
 
-        [self setXMLParser];
-
-        sql= [NSString stringWithFormat:@"insert into books values (NULL,"
-        "'%@', "
-        "'%@',"
-        "'%@',"
-        "'%@',"
-        "%@,"
-        "%@,"
-        "%@,"
-        "NULL,"
-        "NULL"
-        ");",
-        dbook[@"title"],
-        dbook[@"author"],
-        dbook[@"cover_img"],
-        dbook[@"src"],
-        dbook[@"difficulty"],
-        dbook[@"numwords"],
-        dbook[@"numpages"]];
-
-        [db open];
-        [db executeUpdate:sql];
-        [db close];
+            sql= [NSString stringWithFormat:@"insert into books values (NULL,"
+                  "'%@', "
+                  "'%@',"
+                  "'%@',"
+                  "'%@',"
+                  "%@,"
+                  "%@,"
+                  "%@,"
+                  "NULL,"
+                  "NULL"
+                  ");",
+                  dbook[@"title"],
+                  dbook[@"author"],
+                  dbook[@"cover_img"],
+                  dbook[@"src"],
+                  dbook[@"difficulty"],
+                  dbook[@"numwords"],
+                  dbook[@"numpages"]];
+            [db open];
+            [db executeUpdate:sql];
+            [db close];
+        }
     }
 }
 
@@ -155,7 +135,7 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     if(section==0){
-        return 1;
+        return [books count];
     }else{
         return 0;
     }
@@ -171,7 +151,6 @@
 
         NSBundle* bundle = [NSBundle bundleForClass:[self class]];
         NSString *path = [bundle pathForResource:@"Grasphy_book_2bk" ofType:@"png"];
-        UIImage *image = [UIImage imageWithContentsOfFile:path];
         UIImageView *iv = [[UIImageView alloc] init];
         iv.backgroundColor = [UIColor blueColor];
         iv.frame = CGRectMake(10.0, 10.0, 142.0, 216.0);
@@ -202,7 +181,6 @@
         [cell addSubview:authorlabel];
         
         UILabel *diflabel = [[UILabel alloc] initWithFrame:CGRectMake(10,140,142,12)];
-        NSString *dif;
         if (abook.difficulty > 0 && abook.difficulty < 2){
         diflabel.text = @"★☆☆☆☆";
         } else if (abook.difficulty > 2 && abook.difficulty < 4){
@@ -211,7 +189,7 @@
             diflabel.text = @"★★★☆☆";
         } else if (abook.difficulty > 6 && abook.difficulty < 8){
             diflabel.text = @"★★★★☆";
-        } else if (abook.difficulty > 8 && abook.difficulty < 10){
+        } else if (abook.difficulty > 8){
             diflabel.text = @"★★★★★";
         }
         diflabel.textAlignment = UITextAlignmentCenter;
@@ -240,10 +218,10 @@
 
 
 
-- (void)setXMLParser
+- (void)setXMLParser:(NSString*) bookindex
 {
     NSBundle* bundle = [NSBundle bundleForClass:[self class]];
-    NSString* path = [bundle pathForResource:@"pg44563" ofType:@"xml"];
+    NSString* path = [bundle pathForResource:bookindex ofType:@"xml"];
     NSURL* url = [NSURL fileURLWithPath:path];
     NSXMLParser* parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
     parser.delegate = self;
@@ -355,10 +333,6 @@ qualifiedName:(NSString *)qName
         nowTagStr = @"";
     }
 }
-
-
-
-
 
 
 @end

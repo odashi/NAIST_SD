@@ -1,0 +1,253 @@
+@charset "utf-8";
+/**/
+body {
+    margin-left: 10%;
+    margin-right: 10%
+    }
+#coverpage {
+    border: 1px solid black
+    }
+#half-title {
+    text-align: center;
+    font-size: small;
+    margin: 5em 0
+    }
+.tn {
+    width: 35em;
+    margin: 0 auto;
+    background-color: #ffe;
+    color: #000;
+    margin-top: 3em
+    }
+p {
+    text-align: justify
+    }
+.ind {
+    margin-left: 2em;
+    margin-right: 2em
+    }
+.ind1 {
+    margin-left: 3em;
+    margin-right: 3em
+    }
+.ind2 {
+    margin-left: 5em;
+    margin-right: 5em
+    }
+.rindent {
+    text-align: right;
+    margin-top: 0.5em
+    }
+div.foo {
+    margin-left: 30%;
+    margin-top: -0.5em;
+    margin-bottom: 1.5em
+    }
+h1 {
+    line-height: 150%
+    }
+h3.lh {
+    line-height: 150%
+    }
+h1, h2, h3, h4, h5, h6 {
+    text-align: center
+    }
+p.title {
+    text-align: center;
+    text-indent: 0;
+    font-weight: bold;
+    font-variant: small-caps;
+    line-height: 1.5;
+    margin-top: 0.5em;
+    margin-bottom: 0
+    }
+p.title1 {
+    text-align: center;
+    text-indent: 0;
+    font-weight: bold;
+    margin-top: -0.5em;
+    margin-bottom: 0.3em
+    }
+p.title2 {
+    text-align: center;
+    text-indent: 0;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0
+    }
+.side {
+    margin-left: 2em;
+    margin-bottom: -1.5em
+    }
+small {
+    font-size: 70%
+    }
+.small {
+    font-size: 70%
+    }
+.smaller {
+    font-size: 50%
+    }
+big {
+    font-size: 140%
+    }
+.sans {
+    font-family: sans-serif
+    }
+pre {
+    font-size: 0.7em
+    }
+.sc {
+    font-variant: small-caps
+    }
+.center {
+    text-align: center
+    }
+hr {
+    width: 100%
+    }
+html > body hr {
+    margin-right: 0%;
+    margin-left: 0%;
+    width: 100%
+    }
+hr.medium {
+    width: 76%
+    }
+html > body hr.medium {
+    margin-right: 12%;
+    margin-left: 12%;
+    width: 76%
+    }
+hr.short {
+    text-align: center;
+    width: 30%
+    }
+html > body hr.short {
+    margin-right: 35%;
+    margin-left: 35%;
+    width: 30%
+    }
+p.author {
+    text-align: right;
+    margin-top: -1em;
+    margin-right: 2em
+    }
+p.author1 {
+    text-align: right;
+    margin-top: -1em;
+    margin-right: 10em
+    }
+span.pagenum {
+    font-size: 8pt;
+    text-indent: 0
+    }
+.width15 {
+    max-width: 15em
+    }
+.width21 {
+    max-width: 21em
+    }
+.width24 {
+    max-width: 24em
+    }
+.width30 {
+    max-width: 30em
+    }
+.poem {
+    margin: auto
+    }
+.poem .stanza {
+    margin: 1em auto
+    }
+.poem p {
+    margin: 0;
+    padding-left: 3em;
+    text-indent: -3em
+    }
+.poem p.i2 {
+    margin-left: 1em
+    }
+.poem p.i4 {
+    margin-left: 2em
+    }
+.poem p.i18 {
+    margin-left: 9em
+    }
+@media all {
+    /* was @media handheld */
+    .poem {
+        display: block;
+        margin-left: 1.5em
+        }
+    }
+.figcenter, .figright, .figleft {
+    padding: 1em;
+    margin: 0;
+    text-align: center;
+    font-size: 0.8em
+    }
+.figcenter img, .figright img, .figleft img {
+    border: none
+    }
+.figcenter p, .figright p, .figleft p {
+    margin: 1em 0 0 0;
+    text-indent: 1em
+    }
+.figcenter {
+    margin: auto
+    }
+a.ask:link {
+    color: blue;
+    background: inherit;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none
+    }
+a.ask:visited {
+    color: blue;
+    background: inherit;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none
+    }
+@media all {
+    /* was @media handheld */
+    .figleft {
+        float: none;
+        text-align: center;
+        margin-right: 0
+        }
+    }
+@media all {
+    /* was @media handheld */
+    .figright {
+        float: none;
+        text-align: center;
+        margin-left: 0
+        }
+    }
+@media all {
+    /* was @media handheld */
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 1%;
+        margin-bottom: 1%
+        }
+    hr {
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+        visibility: hidden;
+        color: white;
+        display: none
+        }
+    }
+@media print {
+    span.pagenum {
+        visibility: hidden;
+        color: white;
+        display: none
+        }
+    }
+/**/

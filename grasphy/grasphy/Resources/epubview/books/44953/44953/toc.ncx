@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE ncx PUBLIC '-//NISO//DTD ncx 2005-1//EN' 'http://www.daisy.org/z3986/2005/ncx-2005-1.dtd'>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+  <head>
+    <meta content="http://www.gutenberg.org/ebooks/44953" name="dtb:uid"/>
+    <meta content="4" name="dtb:depth"/>
+    <meta content="EpubMaker 0.3.20 by Marcello Perathoner &lt;webmaster@gutenberg.org&gt;" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Punch, or the London Charivari, Vol. 109, July 6, 1895</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="np-1" playOrder="2">
+      <navLabel>
+        <text>London. PUBLISHED AT THE OFFICE, 83 FLEET STREET, Also sold by all booksellers 1895</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00000"/>
+      <navPoint id="np-2" playOrder="5">
+        <navLabel>
+          <text>A COLLOQUY IN CLOUDLAND.</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00001"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="np-3" playOrder="8">
+      <navLabel>
+        <text>PUNCH, OR THE LONDON CHARIVARI. Volume 109, July 6, 1895. edited by Sir Francis Burnand</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00002"/>
+      <navPoint id="np-4" playOrder="9">
+        <navLabel>
+          <text>A PATH OF PEACE.</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00003"/>
+      </navPoint>
+      <navPoint id="np-5" playOrder="10">
+        <navLabel>
+          <text>OUR BOOKING-OFFICE.</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00004"/>
+        <navPoint id="np-6" playOrder="11">
+          <navLabel>
+            <text>SHAKSPEARE ON THE SITUATION.</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00005"/>
+        </navPoint>
+        <navPoint id="np-7" playOrder="13">
+          <navLabel>
+            <text>IN THE SHADE.</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00006"/>
+        </navPoint>
+        <navPoint id="np-8" playOrder="15">
+          <navLabel>
+            <text>HOW ROMANTIC!</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00007"/>
+        </navPoint>
+      </navPoint>
+      <navPoint id="np-9" playOrder="16">
+        <navLabel>
+          <text>THE CANDIDATE'S VADE MECUM.</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00008"/>
+        <navPoint id="np-10" playOrder="17">
+          <navLabel>
+            <text>"DALY NEWS! SPECIAL!"</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00009"/>
+        </navPoint>
+      </navPoint>
+      <navPoint id="np-11" playOrder="19">
+        <navLabel>
+          <text>THE SOMALIS AT SYDENHAM.</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00010"/>
+        <navPoint id="np-12" playOrder="20">
+          <navLabel>
+            <text>In the Stables.</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00011"/>
+          <navPoint id="np-13" playOrder="21">
+            <navLabel>
+              <text>In the Ostrich Farm.</text>
+            </navLabel>
+            <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00012"/>
+          </navPoint>
+          <navPoint id="np-14" playOrder="22">
+            <navLabel>
+              <text>In the Stands—during the Native Display.</text>
+            </navLabel>
+            <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00013"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="np-15" playOrder="24">
+        <navLabel>
+          <text>OPERATIC NOTES.</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00014"/>
+        <navPoint id="np-16" playOrder="25">
+          <navLabel>
+            <text>THE BOY AND THE BAT.</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00015"/>
+        </navPoint>
+        <navPoint id="np-17" playOrder="27">
+          <navLabel>
+            <text>UNLUCKY SPEECHES.</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00016"/>
+        </navPoint>
+        <navPoint id="np-18" playOrder="28">
+          <navLabel>
+            <text>DRESS À LA PREMIÈRE MODE.</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00017"/>
+        </navPoint>
+        <navPoint id="np-19" playOrder="29">
+          <navLabel>
+            <text>AFTER THE CONGRESS WAS OVER.</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pgepubid00018"/>
+        </navPoint>
+      </navPoint>
+      <navPoint id="np-20" playOrder="31">
+        <navLabel>
+          <text>THE GREAT POLITICAL COMBINATION TROUPE.</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html#pgepubid00019"/>
+        <navPoint id="np-21" playOrder="34">
+          <navLabel>
+            <text>OMNISCIENCE.</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html#pgepubid00020"/>
+        </navPoint>
+      </navPoint>
+      <navPoint id="np-22" playOrder="35">
+        <navLabel>
+          <text>ROUNDABOUT READINGS.</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html#pgepubid00021"/>
+        <navPoint id="np-23" playOrder="37">
+          <navLabel>
+            <text>THE TRUE TEST.</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html#pgepubid00022"/>
+        </navPoint>
+        <navPoint id="np-24" playOrder="38">
+          <navLabel>
+            <text>SCRAPS FROM CHAPS.</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html#pgepubid00023"/>
+        </navPoint>
+        <navPoint id="np-25" playOrder="39">
+          <navLabel>
+            <text>Half-and-Half.</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html#pgepubid00024"/>
+        </navPoint>
+      </navPoint>
+      <navPoint id="np-26" playOrder="41">
+        <navLabel>
+          <text>ESSENCE OF PARLIAMENT.</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html#pgepubid00025"/>
+        <navPoint id="np-27" playOrder="43">
+          <navLabel>
+            <text>SUNDERED LIVES.</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html#pgepubid00026"/>
+        </navPoint>
+        <navPoint id="np-28" playOrder="44">
+          <navLabel>
+            <text>A DISCOVERY IN LIQUEURS.</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html#pgepubid00027"/>
+          <navPoint id="np-29" playOrder="45">
+            <navLabel>
+              <text>Transcriber's Note</text>
+            </navLabel>
+            <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html#pgepubid00028"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+    </navPoint>
+  </navMap>
+  <pageList id="pages" class="pagelist">
+    <navLabel>
+      <text>Pages</text>
+    </navLabel>
+    <pageTarget type="front" id="pt-1" value="1" playOrder="1">
+      <navLabel>
+        <text>[pg i]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pagei"/>
+    </pageTarget>
+    <pageTarget type="front" id="pt-2" value="2" playOrder="3">
+      <navLabel>
+        <text>[pg ii]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pageii"/>
+    </pageTarget>
+    <pageTarget type="front" id="pt-3" value="3" playOrder="4">
+      <navLabel>
+        <text>[pg iii]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pageiii"/>
+    </pageTarget>
+    <pageTarget type="front" id="pt-4" value="4" playOrder="6">
+      <navLabel>
+        <text>[pg iv]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#pageiv"/>
+    </pageTarget>
+    <pageTarget type="normal" id="pt-5" value="5" playOrder="7">
+      <navLabel>
+        <text>[pg 1]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#page1"/>
+    </pageTarget>
+    <pageTarget type="normal" id="pt-6" value="6" playOrder="12">
+      <navLabel>
+        <text>[pg 2]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#page2"/>
+    </pageTarget>
+    <pageTarget type="normal" id="pt-7" value="7" playOrder="14">
+      <navLabel>
+        <text>[pg 3]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#page3"/>
+    </pageTarget>
+    <pageTarget type="normal" id="pt-8" value="8" playOrder="18">
+      <navLabel>
+        <text>[pg 4]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#page4"/>
+    </pageTarget>
+    <pageTarget type="normal" id="pt-9" value="9" playOrder="23">
+      <navLabel>
+        <text>[pg 5]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#page5"/>
+    </pageTarget>
+    <pageTarget type="normal" id="pt-10" value="10" playOrder="26">
+      <navLabel>
+        <text>[pg 6]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#page6"/>
+    </pageTarget>
+    <pageTarget type="normal" id="pt-11" value="11" playOrder="30">
+      <navLabel>
+        <text>[pg 7]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-0.htm.html#page7"/>
+    </pageTarget>
+    <pageTarget type="normal" id="pt-12" value="12" playOrder="32">
+      <navLabel>
+        <text>[pg 8]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html#page8"/>
+    </pageTarget>
+    <pageTarget type="normal" id="pt-13" value="13" playOrder="33">
+      <navLabel>
+        <text>[pg 9]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html#page9"/>
+    </pageTarget>
+    <pageTarget type="normal" id="pt-14" value="14" playOrder="36">
+      <navLabel>
+        <text>[pg 10]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html#page10"/>
+    </pageTarget>
+    <pageTarget type="normal" id="pt-15" value="15" playOrder="40">
+      <navLabel>
+        <text>[pg 11]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html#page11"/>
+    </pageTarget>
+    <pageTarget type="normal" id="pt-16" value="16" playOrder="42">
+      <navLabel>
+        <text>[pg 12]</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@44953@44953-h@44953-h-1.htm.html#page12"/>
+    </pageTarget>
+  </pageList>
+</ncx>

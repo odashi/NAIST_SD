@@ -14,6 +14,7 @@
     NSArray *books;
     NSString *nowTagStr;
     NSMutableDictionary *dbook;
+    NSArray *booklist;
 }
 @property (strong, nonatomic) IBOutlet UICollectionView *myCollectionView;
 

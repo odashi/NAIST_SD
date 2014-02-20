@@ -68,6 +68,7 @@
     
     [self.view addSubview:webView];
     [webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"var ID=%@", book.src]];
+    NSLog(@"%@",book.src);
 }
 
 
