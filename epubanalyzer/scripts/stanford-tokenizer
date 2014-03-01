@@ -1,0 +1,11 @@
+#!/bin/bash
+
+source settings.sh
+
+java \
+	-cp ${MYCLASSPATH}/stanford-parser.jar \
+	-Xmx512m \
+	edu.stanford.nlp.process.PTBTokenizer \
+	-preserveLines \
+	/dev/stdin
+

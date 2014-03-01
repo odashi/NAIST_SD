@@ -1,0 +1,8 @@
+#!/bin/bash
+
+source settings.sh
+
+SBPATH=${MYROOTPATH}/lib2/sentenceboundary
+
+${SBPATH}/sentence-boundary.pl -d ${SBPATH}/HONORIFICS -i /dev/stdin -o /dev/stdout
+
